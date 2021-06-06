@@ -4,35 +4,37 @@
 <head>
 	<title>Parcel Sandbox</title>
 	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="C:\Users\Rob\Calculator\styles.css">
+	<link rel="stylesheet" href=".styles.css">
+	<!-- C:\Users\Rob\Calculator\ -->
 </head>
 
 <body>
     <div id="consol">0</div>
   <div id="dashboard">0</div>
 		<div class="grid-container">
-				<button class="grid-item" id="lBracket" >(</button>
+				<button class= "grid-item" id="lBracket" >(</button>
 				<button class="grid-item" id="rBracket" >)</button>
 				<button class="grid-item" id="percent" >%</button>
 				<button class="grid-item" id="destroy" >CE</button>
-				<button class="grid-item" id="seven" >7</button>
-				<button class="grid-item" id="eight" >8</button>
-				<button class="grid-item" id="nine" >9</button>
+				<button onclick="onNumberPress(7)" class="grid-item" id="seven" >7</button>
+				<button onclick="onNumberPress(8)" class="grid-item" id="eight" >8</button>
+				<button onclick="onNumberPress(9)" class="grid-item" id="nine" >9</button>
 				<button class="grid-item" id="devide" >/</button>
-				<button class="grid-item" id="six" >6</button>
-				<button class="grid-item" id="five" >5</button>
-				<button class="grid-item" id="four" >4</button>
+				<button onclick="onNumberPress(6)" class="grid-item" id="six" >6</button>
+				<button onclick="onNumberPress(5)" class="grid-item" id="five" >5</button>
+				<button onclick="onNumberPress(4)" class="grid-item" id="four" >4</button>
 				<button class="grid-item" id="calculate" >x</button>
-				<button class="grid-item" id="three" >3</button>
-				<button class="grid-item" id="two" >2</button>
-				<button class="grid-item" id="one" >1</button>
+				<button onclick="onNumberPress(3)" class="grid-item" id="three" >3</button>
+				<button onclick="onNumberPress(2)" class="grid-item" id="two" >2</button>
+				<button onclick="onNumberPress(1)" class="grid-item" id="one" >1</button>
 				<button class="grid-item" id="minus" >-</button>
 				<button class="grid-item" id="zero" >0</button>
 				<button class="grid-item" id="point" >.</button>
 				<button class="grid-item" id="total" >=</button>
 				<button class="grid-item" id="sum" >+</button>
 			</div>
-	<script src="C:\Users\Rob\Calculator\index.js">
+	<script src=".index.js">
+		// "C:\Users\Rob\Calculator\index.js">
 	</script>
 </body>
 

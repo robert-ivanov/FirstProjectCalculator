@@ -23,42 +23,46 @@ const sum = document.getElementById("sum");
  let consol = document.getElementById("consol");
  let valueDashboard = " ";
  let value1 = "";
-     eight.addEventListener( "click", ()=>{
-   valueDashboard = valueDashboard.concat(8);  
-   dashboard.innerHTML = valueDashboard;
-     });
-    seven.addEventListener( "click", ()=>{
-  valueDashboard = valueDashboard.concat(7);  
+ function onNumberPress(num) {
+  valueDashboard = valueDashboard.concat(num);
   dashboard.innerHTML = valueDashboard;
-     });                 
-    six.addEventListener( "click", ()=>{
-  valueDashboard = valueDashboard.concat(6);  
-  dashboard.innerHTML = valueDashboard;
-     });             
-    five.addEventListener( "click", ()=>{
-  valueDashboard = valueDashboard.concat(5);  
-  dashboard.innerHTML = valueDashboard;
-     });                   
-    four.addEventListener( "click",()=>{
-  valueDashboard = valueDashboard.concat(4);  
-  dashboard.innerHTML = valueDashboard;
-    });                                        
-    three.addEventListener( "click",()=>{
-  valueDashboard = valueDashboard.concat(3);  
-  dashboard.innerHTML = valueDashboard;
-    });           
-    two.addEventListener( "click",()=>{
-  valueDashboard = valueDashboard.concat(2);  
-  dashboard.innerHTML = valueDashboard;
-    });                  
-    one.addEventListener( "click",()=>{
-  valueDashboard = valueDashboard.concat(1);   
-  dashboard.innerHTML = valueDashboard;
-    });                   
-    nine.addEventListener( "click",()=>{
-  valueDashboard = valueDashboard.concat(9);  
-  dashboard.innerHTML = valueDashboard;
-    });              
+};
+  //    eight.addEventListener( "click", ()=>{
+  //  valueDashboard = valueDashboard.concat(8);  
+  //  dashboard.innerHTML = valueDashboard;
+  //    });
+  //   seven.addEventListener( "click", ()=>{
+  // valueDashboard = valueDashboard.concat(7);  
+  // dashboard.innerHTML = valueDashboard;
+  //    });                 
+  //   six.addEventListener( "click", ()=>{
+  // valueDashboard = valueDashboard.concat(6);  
+  // dashboard.innerHTML = valueDashboard;
+  //    });             
+  //   five.addEventListener( "click", ()=>{
+  // valueDashboard = valueDashboard.concat(5);  
+  // dashboard.innerHTML = valueDashboard;
+  //    });                   
+  //   four.addEventListener( "click",()=>{
+  // valueDashboard = valueDashboard.concat(4);  
+  // dashboard.innerHTML = valueDashboard;
+  //   });                                        
+  //   three.addEventListener( "click",()=>{
+  // valueDashboard = valueDashboard.concat(3);  
+  // dashboard.innerHTML = valueDashboard;
+  //   });           
+  //   two.addEventListener( "click",()=>{
+  // valueDashboard = valueDashboard.concat(2);  
+  // dashboard.innerHTML = valueDashboard;
+  //   });                  
+  //   one.addEventListener( "click",()=>{
+  // valueDashboard = valueDashboard.concat(1);   
+  // dashboard.innerHTML = valueDashboard;
+  //   });                   
+  //   nine.addEventListener( "click",()=>{
+  // valueDashboard = valueDashboard.concat(9);  
+  // dashboard.innerHTML = valueDashboard;
+          //  
           sum.addEventListener( "click",()=>{
     value1 += valueDashboard;
     valueDashboard = "";
@@ -66,6 +70,12 @@ const sum = document.getElementById("sum");
     dashboard.innerHTML = valueDashboard ;
     consol.innerHTML = value1 +valueDashboard;
        });
+//     sum.addEventListener( "click",()=>{
+// value1 = valueDashboard;
+// valueDashboard = "";
+// dashboard.innerHTML = valueDashboard ;
+// consol.innerHTML = Number(value1) +Number(valueDashboard);
+//     })
           point.addEventListener( "click",()=>{
     if(! (valueDashboard.includes(".")) ){
       if(valueDashboard.length !== 0){
@@ -105,11 +115,16 @@ const sum = document.getElementById("sum");
      };
          consol.innerHTML = value1 + valueDashboard;
          let total = eval(value1 + valueDashboard);
-         dashboard.innerHTML = "=" + total
+         dashboard.innerHTML = /*Number(value1)+Number(valueDashboard)*/ "=" + total
+        
 
      });
          minus.addEventListener("click",()=>{
-         value1 = value1 - valueDashboard;
+          // value1 = valueDashboard;
+          // valueDashboard = "";
+          // dashboard.innerHTML = valueDashboard ;
+          // consol.innerHTML = Number(value1) - Number(valueDashboard);
+         value1 = value1 + valueDashboard;
          valueDashboard="";
          valueDashboard = valueDashboard.concat( "-");  
         dashboard.innerHTML = valueDashboard ;
@@ -145,11 +160,12 @@ const sum = document.getElementById("sum");
       consol.innerHTML = value1 +valueDashboard
     }); 
       percent.addEventListener("click",()=>{
-       value1 += valueDashboard;
-       valueDashboard="";
-       valueDashboard = valueDashboard.concat( "%");  
-       dashboard.innerHTML = valueDashboard ;
-       consol.innerHTML = value1 +valueDashboard
+        alert("ժամանակավորապես անահասանելի է")
+      //  value1 += valueDashboard;
+      //  valueDashboard="";
+      //  valueDashboard = valueDashboard.concat( "%");  
+      //  dashboard.innerHTML = valueDashboard ;
+      //  consol.innerHTML = value1 +valueDashboard
    });
 
    //Thanks ("Calculator by Robert")
