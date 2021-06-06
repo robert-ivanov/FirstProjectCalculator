@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color:#98F5FF;
+  padding: 0;
+}
+.grid-item {
+  background-color:#FA8072;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#dashboard{
+  width:99.7%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(65, 83, 170, 0.8);
+  text-align: right;
+  font-size: 30px;
+}
+
+#consol{
+  width:99.7%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(65, 83, 170, 0.8);
+  text-align: right;
+  font-size: 12px;
+}
